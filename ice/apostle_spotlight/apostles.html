@@ -7,41 +7,32 @@
     <style>
         /* Insert styles here */
        
-       
+        * {
+            margin: 0 auto;
+        }
+
         body{
-            color: #E8ECED
-        }
-
-        .Image1{
-            border-radius: 50%;
-    
-        
-        
-        }
-        
-        .Image2{
+            color: #E8ECED;
+            
 
         }
-        
+
         .screen {
             background-image: url("images/christus.webp");
             border: 8px solid #000000;
             border-radius: 30px;
             width: 1200px;
             height: 800px;
-            background-size: 2200px;
-            background-position: left top;
-            background-repeat: no-repeat;
         }
 
         h1{
            text-align: center; 
            color: #FFFFFE;
            font-family: Arial, Helvetica, sans-serif;
-           font-size: 45px;
+           font-size: 50px;
            font-weight: 400;
-           margin: 0px;
            padding-top: 10px;
+           margin: 20px
         }
 
         h2{
@@ -49,12 +40,37 @@
             text-align: center; 
 
         }
-        
-            
-        
 
+        #first_presidency {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 70%;
+        }
 
+        #first_presidency img{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 10px solid #FFFFFE;
+            object-fit: cover;
+            object-position: top;
+        }
 
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            width: 70%;
+            margin-bottom: 20px;
+        }
+
+        .row img{
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 10px solid #FFFFFE;
+            object-fit: cover;
+            object-position: top;
+        }
 
     </style>
 </head>
@@ -63,49 +79,37 @@
     
     <div class="screen">
         <h1>First Presidency</h1>
-    
-         <h2 class="p1">Quorum Of the Twelve Apostles</p></a>
-        
-         <div class="'image1" ></div>
             
-            <img src="images/christofferson.webp">
+        <div id="first_presidency">
+            <img src="images/eyring.webp">
             <img src="images/oaks.webp">
-            <img src="images/eyring.webp">   
-
-            <img src="images/holland.webp">
-            <img src="images/uchtdorf.webp">
-            <img src="images/bednar.webp">
-            <img src="images/cook.webp">
-
-            <img src="images/anderson.webp">
-            <img src="images/rasband.webp">
-            <img src="images/stevenson.webp">
-            <img src="images/renlund.webp">
-
-            <img src="images/gong.webp">
-            <img src="images/soares.webp">
-            <img src="images/kearon.webp">
-            <img src="images/causse.webp">
-
-
-
-
-       
-           
-
+            <img src="images/christofferson.webp">
         </div>
-       
 
-    
+        <h2 class="p1">Quorum Of the Twelve Apostles</h2>
 
+        <div id="twelve_apostles">
+            <div class="row">
+                <img src="images/holland.webp">
+                <img src="images/uchtdorf.webp">
+                <img src="images/bednar.webp">
+                <img src="images/cook.webp">
+            </div>
+            
+            <div class="row">
+                <img src="images/anderson.webp">
+                <img src="images/rasband.webp">
+                <img src="images/stevenson.webp">
+                <img src="images/renlund.webp">
+            </div>
+
+            <div class="row">
+                <img src="images/gong.webp">
+                <img src="images/soares.webp">
+                <img src="images/kearon.webp">
+                <img src="images/causse.webp">
+            </div> 
+        </div>
     </div>
-
-
-
-
-
-
-
-
 </body>
 </html>
